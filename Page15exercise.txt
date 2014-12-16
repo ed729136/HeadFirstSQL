@@ -1,0 +1,22 @@
+library-db
+Books:
+title, author
+
+Library Patron:
+money donated, name, last name, last donation
+
+
+bank-db
+Customer Info:
+name, last name,account number, phone number, address, years with bank
+
+Bank Account:
+account number, owner's name, secondary user
+
+
+onlinestore_db
+product info:
+name, seller, cost
+
+shopping cart:
+items, cost 
