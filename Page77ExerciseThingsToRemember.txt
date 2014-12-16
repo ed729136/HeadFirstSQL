@@ -1,0 +1,9 @@
+Use single quotes in your WHERE clause when selecting from text fields.
+
+Don't use single quotes when selecting from numeric fields.
+
+Use the * in your SELECT when you want to select all of the columns.
+
+If you've entered your query and your RDBMS doesn't finish processing it, check for a missing single quote.
+
+When you can, select specific columns in your table, rather than using SELECT *.  ( This is important for speed, only select what you need )
