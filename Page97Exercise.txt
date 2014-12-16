@@ -1,0 +1,20 @@
+SELECT type FROM doughnut_ratings WHERE location = 'Krispy King' AND rating <> 6;
+Result: plain glazed
+
+SELECT type FROM doughnut_ratings WHERE location = 'Krispy King' AND rating = 3;
+Result: NO RESULT
+
+SELECT type FROM doughnut_ratings WHERE location = 'Snappy Bagel' AND rating >= 6;
+Result: NO RESULT
+
+SELECT type FROM doughnut_ratings WHERE location = 'Krispy King' OR rating > 5;
+Results: plain glazed	NULL	jelly
+
+SELECT type FROM doughnut_ratings WHERE location = 'Krispy King' OR rating = 3;
+Results: plain glazed
+
+SELECT type FROM doughnut_ratings WHERE location = 'Snappy Bagel' OR rating = 6;
+Results: NULL
+
+One cannot select a NULL value directly, instead try using IS NULL.
+Example: SELECT * drink_name FROM drink_info WHERE calories IS NULL;
