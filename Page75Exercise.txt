@@ -1,0 +1,11 @@
+Different ways to get a Kiss on the Lips drink:
+
+SELECT drink_name FROM headfirst.easy_drinks WHERE main = 'cherry juice' AND amount1 = 2;
+SELECT drink_name FROM headfirst.easy_drinks WHERE second = 'apricot nectar';
+SELECT drink_name FROM headfirst.easy_drinks WHERE amount2 = 7;
+SELECT drink_name FROM headfirst.easy_drinks WHERE second < 'b';
+
+Different ways to get a Bull Frog drink:
+SELECT drink_name FROM headfirst.easy_drinks WHERE main = 'iced tea';
+SELECT drink_name FROM headfirst.easy_drinks WHERE second = 'lemonade';
+SELECT drink_name FROM headfirst.easy_drinks WHERE directions = 'serve over ice with lime slice';
