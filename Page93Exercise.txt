@@ -1,0 +1,7 @@
+Make one query out of these two queries
+
+SELECT drink_name FROM easy_drinks WHERE main = 'orange juice';
+SELECT drink_name FROM easy_drinks WHERE main = 'apple juice';
+
+Result:
+SELECT drink_name FROM easy_drinks WHERE main = 'orange juice' OR main = 'apple juice';
