@@ -1,0 +1,12 @@
+SELECT cost FROM headfirst.drink_info WHERE ice = 'y' AND color = 'yellow' AND calories > 33;
+Result: 4
+
+SELECT drink_name, color FROM headfirst.drink_info WHERE carbs < 4 AND ice = 'y';
+Result: Blue Moon	blue
+
+SELECT cost FROM headfirst.drink_info WHERE CALORIES >= 80;
+Result: 2.6  3.2  5.5
+
+SELECT drink_name, color, ice FROM headfirst.drink_info WHERE drink_name >= 'g' AND ( color = 'purple' OR color = 'yellow' );
+Result: Greyhound	yellow	Y
+		Kiss on the Lips	purple	Y
