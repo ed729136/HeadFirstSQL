@@ -1,0 +1,6 @@
+drink_name			main			second
+
+Blue Moon			soda 			blueberry juice
+Lone Tree			soda 			cherry juice
+Greyhound			soda 			grapefruit juice
+Soda and It			soda 			grape juice
