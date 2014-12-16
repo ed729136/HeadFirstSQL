@@ -1,0 +1,32 @@
+SELECT * FROM headfirst.easy_drinks WHERE main = 'Sprite';
+#SELECT * FROM headfirst.easy_drinks WHERE main = soda;
+SELECT * FROM headfirst.easy_drinks WHERE amount2 = 6;
+SELECT * FROM headfirst.easy_drinks WHERE second = "orange juice";
+SELECT * FROM headfirst.easy_drinks WHERE amount1 < 1.5;
+SELECT * FROM headfirst.easy_drinks WHERE amount2 < '1';
+SELECT * FROM headfirst.easy_drinks WHERE main > 'soda';
+SELECT * FROM headfirst.easy_drinks WHERE amount1 = '1.5';
+
+Lime Fizz
+Error -> no quotations on string
+Hot Gold, Indian Summer
+Hot Gold
+Oh My Gosh
+Blue Moon, Lime Fizz, Lone Tree
+Blackthorn, Lime Fizz
+Blackthorn, Blue Moon, Bull Frog, Greyhound, Lime Fizz, Lone Tree
+
+
+The query that does not work is SELECT * FROM headfirst.easy_drinks WHERE main = soda;
+	This query does not work because there are no quotations around soda
+
+The ones I didn't expect to work were:
+	SELECT * FROM headfirst.easy_drinks WHERE main > 'soda';
+	#SELECT * FROM headfirst.easy_drinks WHERE main = soda;
+	SELECT * FROM headfirst.easy_drinks WHERE amount2 < '1';
+
+
+
+Extra:
+SELECT CONVERT( directions USING utf8 ) FROM headfirst.easy_drinks WHERE drink_name = "Blackthorn\'s Tavern";
+SELECT * FROM headfirst.easy_drinks WHERE amount1 = '1.5';
