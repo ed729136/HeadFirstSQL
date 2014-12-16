@@ -1,0 +1,25 @@
+WHERE state LIKE 'New %';
+Result: New Jersey, New York
+
+WHERE cow_name LIKE '_lsie'
+Result: Elsie
+
+WHERE title LIKE 'HEAD FIRST%'
+Result: Head First SQL
+
+WHERE RHYME_WORD like '%ender';
+Result: Blender
+
+WHERE first_name LIKE 'Jo%';
+Result: John Joshua
+
+Focused on the words not yet queried
+
+WHERE word LIKE 'Sp%';
+Result: Splendor, Splendid
+
+WHERE word LIKE 'M%'
+Result: Montana, Michigan, Maine
+
+WHERE word LIKE '%L%'
+Result: Alabama, Liver, Pineapple
