@@ -1,0 +1,16 @@
+One To One:
+- A record in table A can have at most one matching record in table B
+- Both tables will contain an ID, on the parent table this ID is going to be a primary key and in the child table is going to be a foreign key
+- An example of this will be the person's SSN since each person has one SSN and each SSN only belongs to one person
+- Exactly one row of a parent table is related to one row of a child table
+- When drawing a schema, the connecting line will be a solid plain line
+
+One To Many:
+- A record in table A can have many matching records in table B but table B can only match one record in table A
+- An example of this is a teacher, a teacher can have many students in one class but the students only have one teacher for that particular class
+- The connecting line has a black arrow at the end
+
+Many to Many:
+- A record in table can have many matching records and the same goes for table B
+- An example of this are sports jerseys, People can have more than one jersey and the same jersey could have been bought by many other people
+- The connecting line has black arrows at both ends
