@@ -1,0 +1,21 @@
+INSERT INTO clown_info VALUES ('Zippo', 'Millstone Mall', 'F, orange suit, baggy pants', 'dancing, singing');
+
+INSERT INTO clown_info VALUES ('Snuggles', 'Ball-Mart', 'F, yellow shirt, baggy blue pants', 'horn, umbrella');
+
+INSERT INTO clown_info VALUES ('Bonzo', 'Dickson Park', 'M, in drag, polka dotted dress', 'dancing, singing');
+
+INSERT INTO clown_info VALUES ('Sniffles', 'Tracy''s, 'M, green and purple suit, pointy nose', 'climbing into tiny car');
+
+INSERT INTO clown_info VALUES ('Mr. Hobo', 'BG Circus', 'M, cigar, black hair, tiny hat', 'violin');
+
+DELETE FROM clown_info WHERE name = 'ZIPPO' and activities = 'dancing, singing';
+
+
+#TO HAVE THE NEWEST RECORD OF A COLUMN ONE DOES NOT NEED TO ADD MORE VALUES INTO THE TABLE, USE UPDATE INSTEAD TO UPDATE THE RECORDS OF YOUR TABLE
+
+#YOU CAN'T USE DELETE TO DELETE THE VALUE FROM A SINGLE COLUMN OR TABLEFUL OF COLUMNS
+
+#YOU CAN USE DELETE TO DELETE A SINGLE ROW OR MULTIPLE ROWS, DEPENDING ON THE WHERE CLAUSE
+
+#A THING TO KEEP IN MIND IS THAT YOU CAN DELETE EVERY ROW FROM A TABLE WITH
+#				DELETE FROM name_of_table;
