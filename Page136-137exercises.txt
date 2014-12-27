@@ -1,0 +1,36 @@
+#Change the calories of Kiss on the Lips to 170
+#Change the yellow values to gold
+#Make all the drinks that cost $2.50 cost $3.50 and make all drinks that currently cost $3.50 now cost $4.50
+
+SELECT * FROM headfirst.drink_info;
+
+#To change any kind of information do a variation of the following
+
+#Change calorie count of Kiss on the Lips drink
+UPDATE headfirst.drink_info 
+SET
+	calories = '170'
+WHERE
+	drink_name = 'Kiss on the Lips';
+
+#Change the color of the yellow drinks to gold
+UPDATE headfirst.drink_info
+SET
+	color = 'gold'
+WHERE
+	color = 'yellow';
+    
+#Change the cost of 2.50 drinks to 3.50 and the cost of 3.50 drinks to 4.50
+UPDATE headfirst.drink_info
+SET
+	cost = '4.50'
+WHERE 
+	cost = '3.50';
+    
+UPDATE headfirst.drink_info
+SET
+	cost = '3.50'
+WHERE
+	cost = '2.50';
+
+SELECT * FROM headfirst.drink_info;
