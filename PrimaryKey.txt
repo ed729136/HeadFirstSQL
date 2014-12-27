@@ -1,0 +1,13 @@
+Primary Key Concepts:
+
+1) You have to specify what column in your table is going to be the primary key when you create the table
+2) The primary key is used to uniquely identify each record and therefore the data on the primary key column cannot be repeated
+3) A primary key cannot be null
+4) Primary keys must be compact and should only contain the information it needs to be unique and nothing extra
+5) Primary key values cannot be changed as changing it might cause you to assign it to a record that is not unique and already used
+
+Good primary keys could be:
+1) Social Security Number
+2) Identification Card 
+3) Library Card
+4) Driver's License
