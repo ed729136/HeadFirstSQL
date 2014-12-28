@@ -1,0 +1,19 @@
+#Add a phone column that can hold 10 digits
+
+#Command given as an example
+#ALTER TABLE my_contacts
+#	ADD COLUMN contact_id INT NOT NULL AUTO_INCREMENT FIRST,
+#	ADD PRIMARY KEY (contact_id);
+
+ALTER TABLE my_contacts ADD COLUMN phone VARCHAR(10);
+ALTER TABLE my_contacts	ADD COLUMN phone VARCHAR(10) AFTER first_name;
+
+
+#Different ways to insert the phone column
+
+ALTER TABLE my_contacts ADD COLUMN phone VARCHAR(10);
+ALTER TABLE my_contacts ADD COLUMN phone VARCHAR(10) BEFORE last_name;
+ALTER TABLE my_contacts ADD COLUMN phone VARCHAR(10) AFTER email;
+ALTER TABLE my_contacts ADD COLUMN phone VARCHAR(10) LAST;
+ALTER TABLE my_contacts ADD COLUMN phone VARCHAR(10) FIRST;
+ALTER TABLE my_contacts ADD COLUMN phone VARCHAR(10) FIFTH;
